@@ -9,12 +9,12 @@ startdate = setting['startdate']
 enddate   = setting['enddate']
 variety   = setting['variety']
 wind_code = setting['wind_code']
-
-# print w.wsd("600000.SH", "high", "2013-05- 09", datetime.today(), "Period=W")
+# print(w.wsd("600000.SH", "high", "2013-05- 09", datetime.today(), "Period=W"))
 #  获取原始数据
 selectscope = "startdate=" + startdate + ";enddate=" + enddate + ";varity=" + variety + ";wind_code=" + wind_code
 selectcondition = selectscope  + ";order_by=long;ranks=all;" \
                                  "field=date,member_name,long_position,short_position,vol,settle"
+# print(selectcondition)
 dset = w.wset("futureoir", selectcondition)
 # print(dset.Data)
 
@@ -31,5 +31,5 @@ df = df.sort_values(by='date')
 # shanghaidalu = df[df["member_name"] == '上海大陆']
 acompany = df[df["member_name"] == '永安期货']
 # df.to_csv("increase.csv")
-acompany.to_csv("yonganqihuo.csv", index=False)
+acompany.to_csv("yonganqihuo.csv", index=False, encoding='utf-8')
 print(acompany)

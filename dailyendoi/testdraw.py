@@ -10,5 +10,5 @@ ticks = ax.set_xticks([0, 250, 500, 750, 1000])
 # labes = ax.set_xticklabels(['one', 'two', 'three', 'four', 'five'], rotation=30, fontsize='small')
 ax.set_title('My first matplotlib figure')
 ax.set_xlabel('Stages')
-
+plt.show()
 print('h')
