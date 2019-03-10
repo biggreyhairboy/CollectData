@@ -1,6 +1,14 @@
 {
-  "wind_code":         "RB1905.SHF",
+  "MONGO_HOST":        "119.3.10.169",
+  "MONGO_PORT":        27017,
+  "jind_code":         "RB1905.SHF",
   "variety":           "RB.SHF",
   "startdate":         "2018-11-01",
-  "enddate":           "2019-01-15"
+  "enddate":           "2019-01-15",
+  "tick_db":	       "VnTrader_Tick_Db",
+  "symbol":	       "rb1905",
+  "tradingyear":       2019,
+  "tradingmonth":      2,
+  "tradingday":        21,
+  "backtest_days":      10
 }
