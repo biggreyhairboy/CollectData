@@ -1,5 +1,4 @@
-{
-  "MONGO_HOST":        "119.3.10.169",
+{ "MONGO_HOST":        "119.3.10.169",
   "MONGO_PORT":        27017,
   "jind_code":         "RB1905.SHF",
   "variety":           "RB.SHF",
@@ -8,7 +7,7 @@
   "tick_db":	       "VnTrader_Tick_Db",
   "symbol":	       "rb1905",
   "tradingyear":       2019,
-  "tradingmonth":      2,
-  "tradingday":        21,
-  "backtest_days":      10
+  "tradingmonth":      3,
+  "tradingday":        12,
+  "backtest_days":      3
 }
