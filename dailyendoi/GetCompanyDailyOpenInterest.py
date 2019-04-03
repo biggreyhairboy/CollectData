@@ -6,13 +6,13 @@ from pandas import DataFrame
 w.start()
 setting = json.load(open('config.json'))
 startdate = setting['startdate']
-enddate   = setting['enddate']
-variety   = setting['variety']
+enddate = setting['enddate']
+variety = setting['variety']
 wind_code = setting['wind_code']
 # print(w.wsd("600000.SH", "high", "2013-05- 09", datetime.today(), "Period=W"))
 #  获取原始数据
 selectscope = "startdate=" + startdate + ";enddate=" + enddate + ";varity=" + variety + ";wind_code=" + wind_code
-selectcondition = selectscope  + ";order_by=long;ranks=all;" \
+selectcondition = selectscope + ";order_by=long;ranks=all;" \
                                  "field=date,member_name,long_position,short_position,vol,settle"
 # print(selectcondition)
 dset = w.wset("futureoir", selectcondition)
