@@ -14,7 +14,11 @@ df['time'] = pd.to_datetime(df['time'], format='%H:%M:%S.%f').dt.time
 # & (df['time'] >= time(9, 0, 0)), 'time']
 morning_five_min = df[(df['time'] <= time(9, 0, 5)) &
                       (df['time'] >= time(9, 0, 0))]
+exception_time_ticks = df[(df['time'] > time(23, 0, 0))]
+print(exception_time_ticks)
 # print(df['time'] < time(9, 5, 0))
 # print(df.dtypes)
 # print(morning_five_min)
-print(morning_five_min.shape)
+# print(morning_five_min.shape)
+# print(morning_five_min[0:5])
+
